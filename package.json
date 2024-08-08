@@ -1,0 +1,11 @@
+{
+	"scripts": {
+		"deploy": "gh-pages --dist apps --branch main"
+	},
+	"devDependencies": {
+		"gh-pages": "^6.1.1"
+	},
+	"dependencies": {
+		"github-db": "^1.1.3"
+	}
+}
