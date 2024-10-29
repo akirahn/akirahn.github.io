@@ -102,7 +102,6 @@ body {
         <h1 class="title">is-great.net</h1>
 					<button class="btn" onclick="ir('http://aecsn.is-great.net/apps');">Apps</button>
 					<button class="btn" onclick="ir('http://aecsn.is-great.net/apl');">Apl</button>
-					<br><br>
 					<hr class=title>
 					<button class="btn" onclick="ir('https://cpanel.infinityfree.com/');">Control Panel</button>
       </div>
