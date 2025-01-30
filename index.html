@@ -117,4 +117,17 @@ body {
 (function blink() { 
   $('.blink_me').fadeOut(500).fadeIn(500, blink); 
 })();
+
+vUrl = window.location.host;
+// String.fromCharCode(198) = &AElig; = Æ
+vTitulo = String.fromCharCode(198) + " by Akira ";
+if (vUrl.indexOf("neocities") != -1) {
+	document.title = vTitulo + " on Neocities";
+} else {
+	if (vUrl.indexOf("github") != -1) {
+		document.title = vTitulo + " on Github";
+	} else {
+		document.title = vTitulo + " on Localhost";		
+	}
+}
 </script>
