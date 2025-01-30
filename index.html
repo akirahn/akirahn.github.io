@@ -120,14 +120,14 @@ body {
 
 vUrl = window.location.host;
 // String.fromCharCode(198) = &AElig; = Æ
-vTitulo = String.fromCharCode(198) + " by Akira ";
+vTitulo = String.fromCharCode(198);
 if (vUrl.indexOf("neocities") != -1) {
-	document.title = vTitulo + " on Neocities";
+	document.title = vTitulo + " / Neocities";
 } else {
 	if (vUrl.indexOf("github") != -1) {
-		document.title = vTitulo + " on Github";
+		document.title = vTitulo + " / Github";
 	} else {
-		document.title = vTitulo + " on Localhost";		
+		document.title = vTitulo + " / Localhost";		
 	}
 }
 </script>
