@@ -102,6 +102,12 @@ body {
         <h1 class="title">is-great.net</h1>
 					<button class="btn" onclick="ir('http://aecsn.is-great.net/apps');">Apps</button>
 					<button class="btn" onclick="ir('http://aecsn.is-great.net/apl');">Apl</button>
+        <h1 class="title">Local TRT</h1>
+					<button class="btn" onclick="ir('http://localhost:8080/apps');">Apps</button>
+					<button class="btn" onclick="ir('http://localhost:8080/phpmyadmin/index.php?server=2');">My</button>
+        <h1 class="title">Local Casa</h1>
+					<button class="btn" onclick="ir('http://localhost/apps');">Apps</button>
+					<button class="btn" onclick="ir('http://localhost/phpmyadmin/index.php?server=2');">My</button>
 					<br><br>
 					<hr class=title>
 					<button class="btn" onclick="ir('https://cpanel.infinityfree.com/');">Control Panel</button>
@@ -114,9 +120,7 @@ body {
 </body>
 
 <script>
-(function blink() { 
-  $('.blink_me').fadeOut(500).fadeIn(500, blink); 
-})();
+// (function blink() { $('.blink_me').fadeOut(500).fadeIn(500, blink); })();
 
 vUrl = window.location.host;
 // String.fromCharCode(198) = &AElig; = Æ
