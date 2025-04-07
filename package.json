@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"deploy": "gh-pages --dist apps --branch main"
+		"deploy": "gh-pages --dist \ --branch main"
 	},
 	"devDependencies": {
 		"gh-pages": "^6.1.1"
