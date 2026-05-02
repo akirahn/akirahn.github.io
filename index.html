@@ -82,13 +82,6 @@ body {
 }
 
 </style>
-<script>
-	function ir(p_link) {
-		window.open(p_link, "_blank");
-	}
-	const dialog2 = document.querySelector("dialog"); 
-	const fs = require('fs');
-</script>
 </head>
 <body>
 	<div class="container pcontainer">
@@ -102,19 +95,19 @@ body {
     <div class="container">
       <div class="card">
         <h1 class="title">free.nf</h1>
-					<button class="btn" onclick="ir('http://aecsn.free.nf/apps');">Apps</button>
-					<button class="btn" onclick="ir('http://aecsn.free.nf/apl');">Apl</button>
+					<button class="btn" onclick="ir('http://aecsn.free.nf/apps');">AE/CSN Antigo</button>
         <h1 class="title">is-great.net</h1>
-					<button class="btn" onclick="ir('http://aecsn.is-great.net/apps');">Apps</button>
-					<button class="btn" onclick="ir('http://aecsn.is-great.net/apl');">Apl</button>
-        <h1 class="title">Local TRT</h1>
-					<button class="btn" onclick="ir('http://localhost:8080/apps');">Apps</button>
-					<button class="btn" onclick="ir('http://localhost:8080/phpmyadmin/index.php?server=2');">My</button>
-        <h1 class="title">Local Casa</h1>
-					<button class="btn" onclick="ir('http://localhost/apps');">Apps</button>
-					<button class="btn" onclick="ir('http://localhost/phpmyadmin/index.php?server=2');">My</button>
+					<button class="btn" onclick="ir('http://aecsn.is-great.net/apps');">AE/CSN</button>
+					<button class="btn" onclick="ir('http://aecsn.is-great.net/sni');">SNI</button>
+        <h1 class="title">Local AE/CSN</h1>
+					<button class="btn" onclick="ir('http://localhost/apps');">Antigo</button>
+					<button class="btn" onclick="ir('http://localhost:8080/apps');">Novo</button>
+        <h1 class="title">Local SNI</h1>
+					<button class="btn" onclick="ir('http://localhost:8080/sni');">SNI</button>
+					<!-- <button class="btn" onclick="ir('http://localhost/phpmyadmin/index.php?server=2');">My</button> -->
 					<br><br>
 					<hr class=title>
+					<h1 class="title">InfinityFree</h1>
 					<button class="btn" onclick="ir('https://cpanel.infinityfree.com/');">Control Panel</button>
         <h1 class="title">Dicas</h1>
 					<button class="btn" onclick="ir('dicas.html');">Dicas</button>
@@ -122,11 +115,16 @@ body {
 					<button class="btn" onclick="dialog2.showModal();">Modal</button>
       </div>
     </div>
+		<img src="http://localhost:8080/teste.php">
 </body>
 
 <script>
 // <span class="blink_me">This Will Blink</span> 
 // (function blink() { $('.blink_me').fadeOut(500).fadeIn(500, blink); })();
+
+function ir(p_link) {
+	window.open(p_link, "_blank");
+}
 
 vUrl = window.location.host;
 // String.fromCharCode(198) = &AElig; = Æ
