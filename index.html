@@ -17,17 +17,26 @@
 }
 
 body {
+/*
+*/	
   background: linear-gradient(120deg, #1D976C, #2c3e50);
 }
 
+#tudo {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
-  min-height: 75vh;
+  /*min-height: 75vh;*/
   width: 100%;
+	height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .pcontainer {
@@ -44,7 +53,7 @@ body {
   -webkit-backdrop-filter: blur( 18px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1.2rem;
   z-index: 10;
   color: whitesmoke;
 }
@@ -57,11 +66,14 @@ body {
 	color: #FFFFFF;
 	font-weight: bold;
 	text-align: center;
+  font-size: 2rem;
+  /*margin-bottom: 0.8rem;*/
 }
 
 .title {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .subtitle {
@@ -76,7 +88,7 @@ body {
   font-size: 1rem;
   color: whitesmoke;
   background-color: #fa709a;
-  padding: 0.8rem 1.8rem;
+  padding: 0.6rem 1.5em;
   border-radius: 2rem;
   cursor: pointer;
 }
@@ -84,43 +96,47 @@ body {
 </style>
 </head>
 <body>
-	<div class="container pcontainer">
-		<div class="card pcard">
-			<p class="title principal">&AElig;</p>
-		</div>
-	</div>
-		<dialog>
-			<button onclick="dialog2.close();">Fechar</button>
-		</dialog>
+	<div id=tudo>
+	<!-- <div class="container pcontainer"> -->
+		<!-- <div class="card pcard"> -->
+			<!-- <p class="title principal">&AElig; / CSN / SNI</p> -->
+		<!-- </div> -->
+	<!-- </div> -->
     <div class="container">
       <div class="card">
+				<h1 class="principal">&AElig; / CSN / SNI</h1>
+				<hr class=title>
+				<div style="display: grid;  grid-template-columns: repeat(2, 1fr); gap: 10px; columns: 2; ">
         <h1 class="title">free.nf</h1>
-					<button class="btn" onclick="ir('http://aecsn.free.nf/apps');">AE/CSN Antigo</button>
         <h1 class="title">is-great.net</h1>
+					<button class="btn" onclick="ir('http://aecsn.free.nf/apps');">AE/CSN Antigo</button>
 					<button class="btn" onclick="ir('http://aecsn.is-great.net/apps');">AE/CSN</button>
+					<br>
 					<button class="btn" onclick="ir('http://aecsn.is-great.net/sni');">SNI</button>
-        <h1 class="title">Local AE/CSN</h1>
-					<button class="btn" onclick="ir('http://localhost/apps');">Antigo</button>
-					<button class="btn" onclick="ir('http://localhost:8080/apps');">Novo</button>
+				</div>
+        <h1 class="title">Local</h1>
+					<button class="btn" onclick="ir('http://localhost/apps');">AE/CSN<sub>Apps</sub></button>
+					<button class="btn" onclick="ir('http://localhost:8080/apps');">AE/CSN</button>
+					<button class="btn" onclick="ir('http://localhost:8080/sni');">SNI</button>
+				<h1 class="title">InfinityFree</h1>
+					<button class="btn" onclick="ir('https://cpanel.infinityfree.com/');">Control Panel</button>
+<!--					
         <h1 class="title">Local SNI</h1>
 					<button class="btn" onclick="ir('http://localhost:8080/sni');">SNI</button>
-					<!-- <button class="btn" onclick="ir('http://localhost/phpmyadmin/index.php?server=2');">My</button> -->
-					<br><br>
-					<hr class=title>
-					<h1 class="title">InfinityFree</h1>
-					<button class="btn" onclick="ir('https://cpanel.infinityfree.com/');">Control Panel</button>
+					<!-- <button class="btn" onclick="ir('http://localhost/phpmyadmin/index.php?server=2');">My</button> --
+					<br>
+					<br>
+-->					
+				<hr class=title>
         <h1 class="title">Dicas</h1>
 					<button class="btn" onclick="ir('dicas.html');">Dicas</button>
 					<!-- <button class="btn" onclick="ir('http://aecsn.free.nf/apl');">Apl</button> -->
-					<button class="btn" onclick="dialog2.showModal();">Modal</button>
       </div>
     </div>
-		<img src="http://localhost:8080/teste.php">
+	</div>
 </body>
 
 <script>
-// <span class="blink_me">This Will Blink</span> 
-// (function blink() { $('.blink_me').fadeOut(500).fadeIn(500, blink); })();
 
 function ir(p_link) {
 	window.open(p_link, "_blank");
