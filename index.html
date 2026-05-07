@@ -72,8 +72,14 @@ body {
 
 .title {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+hr {
+  margin-bottom: 0.7rem;
+  margin-top: 0.6rem;
+	border-color: #FFFFFF;
 }
 
 .subtitle {
@@ -105,32 +111,34 @@ body {
     <div class="container">
       <div class="card">
 				<h1 class="principal">&AElig; / CSN / SNI</h1>
-				<hr class=title>
+				<hr>
 				<div style="display: grid;  grid-template-columns: repeat(2, 1fr); gap: 10px; columns: 2; ">
-        <h1 class="title">free.nf</h1>
-        <h1 class="title">is-great.net</h1>
-					<button class="btn" onclick="ir('http://aecsn.free.nf/apps');">AE/CSN Antigo</button>
-					<button class="btn" onclick="ir('http://aecsn.is-great.net/apps');">AE/CSN</button>
-					<br>
-					<button class="btn" onclick="ir('http://aecsn.is-great.net/sni');">SNI</button>
+					<h1 class="title">free.nf</h1>
+					<h1 class="title">is-great.net</h1>
+						<button class="btn" onclick="ir('http://aecsn.free.nf/apps');">AE/CSN Antigo</button>
+						<button class="btn" onclick="ir('http://aecsn.is-great.net/apps');">AE/CSN</button>
+						<br>
+						<button class="btn" onclick="ir('http://aecsn.is-great.net/sni');">SNI</button>
 				</div>
+				<div style="display: grid;  grid-template-columns: repeat(2, 1fr); gap: 10px; columns: 2; ">
         <h1 class="title">Local</h1>
-					<button class="btn" onclick="ir('http://localhost/apps');">AE/CSN<sub>Apps</sub></button>
-					<button class="btn" onclick="ir('http://localhost:8080/apps');">AE/CSN</button>
-					<button class="btn" onclick="ir('http://localhost:8080/sni');">SNI</button>
 				<h1 class="title">InfinityFree</h1>
+					<button class="btn" onclick="ir('http://localhost/apps');">AE/CSN<sub>Apps</sub></button>
 					<button class="btn" onclick="ir('https://cpanel.infinityfree.com/');">Control Panel</button>
-<!--					
-        <h1 class="title">Local SNI</h1>
+					<button class="btn" onclick="ir('http://localhost:8080/apps');">AE/CSN</button>
+					<br>
 					<button class="btn" onclick="ir('http://localhost:8080/sni');">SNI</button>
-					<!-- <button class="btn" onclick="ir('http://localhost/phpmyadmin/index.php?server=2');">My</button> --
-					<br>
-					<br>
--->					
-				<hr class=title>
+				</div>
+				<hr>
+				<div style="display: grid;  grid-template-columns: repeat(2, 1fr); gap: 10px; columns: 2; ">
+        <h1 class="title">Ferramentas</h1>
         <h1 class="title">Dicas</h1>
+					<button class="btn" onclick="ir('teste_html.html');">Testar HTML</button>
 					<button class="btn" onclick="ir('dicas.html');">Dicas</button>
-					<!-- <button class="btn" onclick="ir('http://aecsn.free.nf/apl');">Apl</button> -->
+					<button class="btn" onclick="ir('mysql2sqlite.html');">Mysql 2 Sqlite</button>
+					<br>
+					<button class="btn" onclick="ir('websql.html');">Web SQL</button>
+				</div>
       </div>
     </div>
 	</div>

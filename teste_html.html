@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Author" content="Fábio Borges de Oliveira refit by &AElig;">
+<title>Teste seu Html/CSS/JS by &AElig;</title>
+<script>
+	function testar(p_conteudo) {
+		let myWindow = window.open("", "Testar Html/CSS/JS");
+		myWindow.document.writeln(p_conteudo);
+		
+	}
+</script>
+</head>
+<body bgcolor=#CCCCCC>
+	<center>
+	<form>
+		<br>
+		<textarea name="fonte" cols=70 rows=20 style="width: 95%">
+
+<html>
+<body>
+	Página HTML 
+	<script type="text/javascript">
+		<!--
+		
+			/* escreva seu código aqui.*/
+			
+		//-->
+	</script>
+
+</body>
+</html>
+
+		</textarea>
+		<br><br>
+    	<input type="button" value=" Testar sua página" onclick="testar(fonte.value);">
+    </form>
+	</center>
+</body>
+</html>
